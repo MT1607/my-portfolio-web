@@ -1,5 +1,5 @@
 "use client";
-import styles from "./page.css";
+import "./page.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "boxicons/css/boxicons.min.css";
@@ -8,7 +8,6 @@ import "swiper/css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typed from "typed.js";
-import PureCounter from "@srexi/purecounterjs";
 
 import React, { useEffect, useRef } from "react";
 import RootLayout from "./layout";
@@ -17,10 +16,6 @@ export default function Home() {
   const rel = useRef(null);
 
   useEffect(() => {
-    new PureCounter(rel.current, {
-      selector: ".purecounter",
-    });
-
     const typed = new Typed(rel.current, {
       strings: ["Frontend Developer", "Software Developer", "Java Developer"],
       startDelay: 300,
@@ -123,7 +118,7 @@ export default function Home() {
           <div className="hero_container" data-aos="fade-in">
             <h1>Alex Smith</h1>
             <p>
-              I'm <span ref={rel}></span>
+              I&apos;m <span ref={rel}></span>
             </p>
           </div>
         </section>
@@ -240,14 +235,7 @@ export default function Home() {
                 >
                   <div className="count_box">
                     <i className="bi bi-emoji-smile"></i>
-                    <span
-                      data-purecounter-start="0"
-                      data-purecounter-end="232"
-                      data-purecounter-duration="1"
-                      className="purecounter"
-                    >
-                      0
-                    </span>
+                    <span>232</span>
                     <p>
                       <strong>Happy Clients</strong> consequuntur quae
                     </p>
@@ -261,12 +249,7 @@ export default function Home() {
                 >
                   <div className="count_box">
                     <i className="bi bi-journal-richtext"></i>
-                    <span
-                      data-purecounter-start="0"
-                      data-purecounter-end="521"
-                      data-purecounter-duration="1"
-                      className="purecounter"
-                    ></span>
+                    <span>521</span>
                     <p>
                       <strong>Projects</strong> adipisci atque cum quia aut
                     </p>
@@ -280,12 +263,7 @@ export default function Home() {
                 >
                   <div className="count_box">
                     <i className="bi bi-headset"></i>
-                    <span
-                      data-purecounter-start="0"
-                      data-purecounter-end="1453"
-                      data-purecounter-duration="1"
-                      className="purecounter"
-                    ></span>
+                    <span>1453</span>
                     <p>
                       <strong>Hours Of Support</strong> aut commodi quaerat
                     </p>
@@ -299,12 +277,7 @@ export default function Home() {
                 >
                   <div className="count_box">
                     <i className="bi bi-people"></i>
-                    <span
-                      data-purecounter-start="0"
-                      data-purecounter-end="32"
-                      data-purecounter-duration="1"
-                      className="purecounter"
-                    ></span>
+                    <span>32</span>
                     <p>
                       <strong>Hard Workers</strong> rerum asperiores dolor
                     </p>
@@ -1098,7 +1071,7 @@ export default function Home() {
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
                       style={{ border: 0, width: "100%", height: "290px" }}
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
                 </div>
@@ -1112,7 +1085,7 @@ export default function Home() {
                   >
                     <div className="row">
                       <div className="form-group col-md-6">
-                        <label for="name">Your Name</label>
+                        <label htmlFor="name">Your Name</label>
                         <input
                           type="text"
                           name="name"
@@ -1122,7 +1095,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label for="name">Your Email</label>
+                        <label htmlFor="name">Your Email</label>
                         <input
                           type="email"
                           className="form-control"
@@ -1133,7 +1106,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="form-group">
-                      <label for="name">Subject</label>
+                      <label htmlFor="name">Subject</label>
                       <input
                         type="text"
                         className="form-control"
@@ -1143,7 +1116,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="form-group">
-                      <label for="name">Message</label>
+                      <label htmlFor="message">Message</label>
                       <textarea
                         className="form-control"
                         name="message"

@@ -182,11 +182,6 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.5.1.tgz#5f1b518ec5fa54437c0b7c4a821546c64fed6922"
   integrity sha512-6i/8UoL0P5y4leBIGzvkZdS85RDMG9y1ihZzmTZQ5LdHUYmZ7pKFoj8X0236s3lusPs1Fa5HTQUpwI+UfTcmeA==
 
-"@srexi/purecounterjs@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@srexi/purecounterjs/-/purecounterjs-1.5.0.tgz#e377a5c8415803284e13d2aa6c4b8e7708704f46"
-  integrity sha512-9ggIhaiR2O0MGq3l+rBsApanj0OM+lgY78+2Zx271Cy1QZSsMRwKyphy7NiBeVYimL8/mMvGhipR8yhAzylcXg==
-
 "@swc/helpers@0.5.2":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.2.tgz#85ea0c76450b61ad7d10a37050289eded783c27d"
