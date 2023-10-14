@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Setup Nodejs
-        uses: actions/setup-nodejs@v2
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: '14.x'
       - name: Install Dependencies
