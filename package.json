@@ -9,9 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@srexi/purecounterjs": "^1.5.0",
+    "@syncfusion/ej2-react-progressbar": "^23.1.38",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "boxicons": "^2.1.4",
+    "clsx": "^2.0.0",
+    "glightbox": "^3.2.0",
+    "next": "13.5.4",
     "react": "^18",
+    "react-bootstrap": "^2.9.0",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "swiper": "^10.3.1",
+    "swiper-bundle": "^0.0.1-security",
+    "typed.js": "^2.0.16"
   },
   "devDependencies": {
     "eslint": "^8",
