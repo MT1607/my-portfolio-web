@@ -29,8 +29,8 @@ const Skills = () => {
 
           <div className="row skills-content">
             <div className="col-lg-12" data-aos="fade-up">
-              {skills.map((skill) => (
-                <div className="progress">
+              {skills.map((skill, index) => (
+                <div key={index} className="progress">
                   <span className="skill">
                     {skill.skill_name}{" "}
                     <i className="val">{skill.skill_value}</i>
